@@ -1,0 +1,844 @@
+/* Import Font */
+:root{
+    --primary-color: #4B56D2;
+    --secondary-color: #82C3EC;
+    --dark-purple-color :#472183;
+    --sugar-color :#F1F6F5;
+    --night-color :#656565;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-snap-type: y mandatory;
+}
+p, h2, h4{
+    margin-bottom: 1em;
+}
+
+/* Header Section */
+header{
+    width: 100vw;
+    height: 10vh;
+    padding: 1% 5%;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    justify-content: space-between;
+    align-items: center;
+    scroll-snap-align: start;
+}
+header img{
+    width: 100px;
+    height: 40px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    position: relative;
+}
+.active{
+    position: absolute;
+    bottom: -2px;
+    min-width: 100%;
+    min-height: 0.5em;
+    border-radius: 1em;
+    background-color: #ffffff52;
+}
+nav ul li a{
+    padding: 0 1em;
+    text-decoration: none;
+    color: var(--sugar-color);
+    font-weight: bold;
+
+}
+header > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--sugar-color);
+    font-weight: bold;
+}
+header > div span{
+    margin-right: 1em;
+}
+header > div span a, header > div span a:visited{
+    text-decoration: none;
+    color: var(--sugar-color);
+}
+header > div img{
+    width: 30px;
+    height: 30px;
+}
+
+/* Main Section */
+main{
+    width: 100vw;
+    height: 90vh;
+    padding: 2.5% 5%;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    scroll-snap-align: start;
+}
+main > div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#Images3D{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main h2{
+    font-weight: bold;
+    font-size: 4em;
+    margin-bottom: 0.2em;
+}
+main h1{
+    font-weight: bold;
+    font-size: 4em;
+    color: var(--primary-color);
+    margin-bottom: 1em;
+}
+main button{
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 1em;
+    margin-top: 3em;
+}
+#Images3D > img:nth-of-type(1){
+    width: 270px;
+    height: 65%;
+    margin-left: 15px;
+    border-radius: 1em;
+}
+#Images3D > div {
+    width: 230px;
+    height: 65%;
+    margin-bottom: 2em;
+}
+#Images3D > div > img:nth-of-type(1){
+    width: 100%;
+    margin-bottom: 15px;
+    height: 65%;
+    border-radius: 1em;
+}
+#Images3D > div > img:nth-of-type(2){
+    width: 100%;
+    height: 30%;
+    border-radius: 1em;
+}
+
+/* Services Section */
+#Services{
+    width: 100vw;
+    height: 100vh;
+    padding: 2.5% 5%;
+    background-color: var(--secondary-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    scroll-snap-align: start;
+}
+.ServicesTitle p{
+    padding: 0 15em;
+}
+.ServicesTitle p:first-of-type{
+    font-weight: bold;
+}
+.ServicesTitle h2{
+    color: white;
+    font-size: 3em;
+}
+.ServicesCardContainer{
+    display: grid;
+    column-gap: 3.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+}
+.ServicesCard{
+    background-color: var(--sugar-color);
+    border-radius: 1em;
+    padding: 40px 30px;
+    margin: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ServicesCard img{
+    width: 120px;
+    height: 120px;
+    border-radius: 10em;
+    margin-bottom: 20px;
+}
+.ServicesCard p{
+    color: var(--night-color);
+    font-weight: 300;
+    font-size: 0.8em;
+}
+.ServicesCard a, .ServicesCard a:visited{
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 300ms ease-in;
+}
+.ServicesCard a:hover{
+    font-size: 1.1em;
+}
+.ServicesCard:nth-of-type(2){
+    height: 360px;
+}
+.ServicesCard:nth-of-type(2) img{
+    width: 140px;
+    height: 140px;
+    border-radius: 10em;
+    margin-bottom: 30px;
+}
+
+/* More Infromation Section */
+#MoreInfo{
+    width: 100vw;
+    height: 100vh;
+    padding: 2.5% 5%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    column-gap: 20px;
+    scroll-snap-align: start;
+}
+#LeftContainer{
+    position: relative;
+    margin: auto;
+}
+#LeftContainer img{
+    width: 400px;
+    height: 550px;
+    border-radius: 3em;
+}
+#FloatBox1, #FloatBox2, #FloatBox3{
+    position: absolute;
+    background-color: var(--sugar-color);
+    border-radius: 2em;
+    padding: 1.2em 3em;
+    width: fit-content;
+}
+#FloatBox1{
+    top: 8%;
+    right: -20%;
+}
+#FloatBox2{
+    top: 43%;
+    left: -30%;
+}
+#FloatBox3{
+    bottom: -5%;
+    right: -30%;
+}
+#FloatBox1 h3, #FloatBox2 h3, #FloatBox3 h3{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+#FloatBox1 h4, #FloatBox2 h4, #FloatBox3 h4{
+    margin-bottom: 0;
+}
+#FloatBox1 h4{
+    font-weight: bold;
+}
+#RightContainer{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: start;
+}
+#RightContainer h2{
+    font-weight: bold;
+    font-size: 3em;
+}
+#RightContainer p{
+    color: var(--night-color);
+    text-align: justify;
+}
+#RightContainer button{
+    border: none;
+    color: white;
+    border-radius: 1em;
+    background-color: var(--dark-purple-color);
+    padding: 15px 40px;
+    margin-top: 2.5em;
+}
+
+/* Places Section */
+#Places{
+    width: 100vw;
+    height: 100vh;
+    padding: 2.5% 5%;
+    background-color: var(--sugar-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    scroll-snap-align: start;
+}
+.PlacesTitle p:first-of-type{
+    font-weight: bold;
+}
+.PlacesTitle h2{
+    color: var(--dark-purple-color);
+    font-size: 3em;
+}
+.PlacesCardContainer{
+    display: grid;
+    column-gap: 3em;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+}
+.PlaceCard{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    max-height: 450px;
+    margin: auto;
+}
+.PlaceCard img{
+    width: 300px;
+    height: 450px;
+    border: 10px solid white;
+    border-radius: 1em;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    margin: auto;
+}
+.PlaceCard button{
+    position: absolute;
+    background-color: white;
+    left: 20%;
+    bottom: 5%;
+    border-radius: 2em;
+    border: none;
+    padding: 20px 80px;
+}
+
+/* Call To Action Section */
+#CallToAction{
+    padding: 4% 5%;
+    text-align: center;
+    color: var(--sugar-color);
+    scroll-snap-align: start;
+}
+#CallToAction div{
+    background: linear-gradient(93.38deg, #4B56D2 0%, #82C3EC 100%);
+    border-radius: 1em;
+    padding: 40px 20px;
+}
+#CallToAction h2{
+    font-size: 2em;
+}
+#CallToAction button{
+    background-color: white;
+    border: none;
+    border-radius: 1em;
+    padding: 15px 40px;
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer{
+    padding: 2% 5%;
+    background-color: var(--primary-color);
+    color: var(--sugar-color);
+    text-align: center;
+}
+
+
+/* 992px, 768px, 576px */
+@media (max-width: 992px) {
+    p, h2, h4{
+        margin-bottom: 0.8em;
+    }
+    
+    /* Header Section */
+    header{
+        padding: 1% 4%;
+    }
+    header > div span{
+        margin-right: 0.8em;
+    }
+
+    /* Main Section */
+    main{
+        padding: 2.5% 4%;
+        grid-template-columns: 1fr 0.5fr;
+    }
+    main h2{
+        font-size: 3em;
+    }
+    main h1{
+        font-size: 3em;
+        margin-bottom: 0.8em;
+    }
+    main button{
+        margin-top: 2.5em;
+    }
+    #Images3D > img:nth-of-type(1){
+        width: 250px;
+    }
+    #Images3D > div {
+        width: 210px;
+    }
+
+    /* Services Section */
+    #Services{
+        padding: 2.5% 4%;
+    }
+    .ServicesTitle p{
+        padding: 0 12em;
+    }
+    .ServicesCard{
+        padding: 35px 25px;
+    }
+    .ServicesCard img{
+        width: 110px;
+        height: 110px;
+    }
+    .ServicesCard:nth-of-type(2){
+        height: 340px;
+    }
+    .ServicesCard:nth-of-type(2) img{
+        width: 130px;
+        height: 130px;
+    }
+
+    /* More Infromation Section */
+    #MoreInfo{
+        padding: 2.5% 4%;
+        grid-template-columns: 0.6fr 1fr;
+        column-gap: 30px;
+    }
+    #LeftContainer img{
+        width: 300px;
+        height: 450px;
+    }
+    #FloatBox1, #FloatBox2, #FloatBox3{
+        padding: 1em 2em;
+    }
+    #FloatBox1{
+        top: 8%;
+        right: -10%;
+    }
+    #FloatBox2{
+        top: 43%;
+        left: -15%;
+    }
+    #FloatBox3{
+        bottom: -5%;
+        right: -20%;
+    }
+    #RightContainer h2{
+        font-size: 2em;
+    }
+    #RightContainer button{
+        padding: 15px 30px;
+        margin-top: 2.5em;
+    }
+
+    /* Places Section */
+    #Places{
+        padding: 2.5% 4%;
+    }
+    .PlacesCardContainer{
+        column-gap: 2em;
+    }
+    .PlaceCard{
+        max-width: 250px;
+        max-height: 400px;
+    }
+    .PlaceCard img{
+        width: 250px;
+        height: 400px;
+        border: 8px solid white;
+    }
+    .PlaceCard button{
+        left: 25%;
+        padding: 15px 50px;
+    }
+
+    /* Call To Action Section */
+    #CallToAction{
+        padding: 4%;
+    }
+    #CallToAction div{
+        padding: 30px 20px;
+    }
+    #CallToAction button{
+        padding: 15px 30px;
+    }
+
+    /* Footer Section */
+    footer{
+        padding: 2% 4%;
+    }
+}
+@media (max-width: 768px) {
+    p, h2, h4{
+        margin-bottom: 0.7em;
+    }
+    
+    /* Header Section */
+    header{
+        padding: 1% 3.5%;
+    }
+    header > div span{
+        margin-right: 0.5em;
+    }
+
+    /* Main Section */
+    main{
+        padding: 2.5% 3.5%;
+        grid-template-columns: 1fr 0.4fr;
+    }
+    main h2{
+        font-size: 2em;
+    }
+    main h1{
+        font-size: 2.2em;
+        margin-bottom: 0.7em;
+    }
+    main p{
+        font-size: 0.85em;
+    }
+    main button{
+        margin-top: 2em;
+    }
+    #Images3D > img:nth-of-type(1){
+        width: 230px;
+    }
+    #Images3D > div {
+        width: 190px;
+    }
+
+    /* Services Section */
+    #Services{
+        padding: 2.5% 3.5%;
+    }
+    .ServicesTitle p{
+        font-size: 0.85em;
+    }
+    .ServicesTitle h2{
+        font-size: 2em;
+    }
+    .ServicesCard{
+        padding: 20px 10px;
+    }
+    .ServicesCard img{
+        width: 90px;
+        height: 90px;
+    }
+    .ServicesCard:nth-of-type(2){
+        height: 320px;
+    }
+    .ServicesCard:nth-of-type(2) img{
+        width: 110px;
+        height: 110px;
+    }
+    .ServicesCardContainer{
+        column-gap: 2em;
+    }
+
+    /* More Infromation Section */
+    #MoreInfo{
+        padding: 2.5% 4%;
+        grid-template-columns: 0.6fr 1fr;
+        column-gap: 30px;
+    }
+    #LeftContainer img{
+        width: 300px;
+        height: 450px;
+    }
+    #FloatBox1, #FloatBox2, #FloatBox3{
+        padding: 1em 2em;
+    }
+    #FloatBox1{
+        top: 8%;
+        right: -10%;
+    }
+    #FloatBox2{
+        top: 43%;
+        left: -15%;
+    }
+    #FloatBox3{
+        bottom: -5%;
+        right: -20%;
+    }
+    #RightContainer h2{
+        font-size: 2em;
+    }
+    #RightContainer button{
+        padding: 15px 25px;
+        margin-top: 1.5em;
+    }
+
+    /* Places Section */
+    #Places{
+        padding: 2.5% 4%;
+    }
+    .PlacesCardContainer{
+        column-gap: 1.8em;
+    }
+    .PlaceCard{
+        max-width: 200px;
+        max-height: 400px;
+    }
+    .PlaceCard img{
+        width: 200px;
+        height: 400px;
+        border: 8px solid white;
+    }
+    .PlaceCard button{
+        left: 24%;
+        padding: 15px 35px;
+    }
+    .PlacesTitle p:nth-of-type(2){
+        font-size: 0.8em;
+    }
+    .PlacesTitle h2{
+        font-size: 2em;
+    }
+
+    /* Call To Action Section */
+    #CallToAction{
+        padding: 4%;
+    }
+    #CallToAction div{
+        padding: 30px 20px;
+    }
+    #CallToAction h2{
+        font-size: 1.5em;
+    }
+    #CallToAction p{
+        font-size: 0.8em;
+    }
+    #CallToAction button{
+        padding: 15px 25px;
+    }
+
+    /* Footer Section */
+    footer{
+        padding: 2% 4%;
+    }
+}
+@media (max-width: 576px) {
+    /* Header Section */
+    header{
+        height: 8.5vh;
+        padding: 1% 3%;
+    }
+    header img{
+        width: 70px;
+        height: 30px;
+    }
+    nav ul{
+        justify-content: space-around;
+    }
+    .active{
+        bottom: -2px;
+        min-height: 0.3em;
+    }
+    nav ul li a{
+        padding: 0 0.75em;
+    }
+    header > div span{
+        margin-right: 0.5em;
+    }
+    header > div img{
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Main Section */
+    main{
+        height: 91.5vh;
+        padding: 2.5% 3%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
+    }
+    main > div:first-of-type{
+        margin-top: 2em;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    main h2{
+        font-size: 2em;
+    }
+    main h1{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    main button{
+        padding: 10px 20px;
+        margin-top: 2em;
+    }
+    #Images3D > img:nth-of-type(1){
+        width: 270px;
+        height: 65%;
+        margin-left: 15px;
+        border-radius: 1em;
+    }
+    #Images3D > div {
+        width: 230px;
+        height: 65%;
+        margin-bottom: 2em;
+    }
+    #Images3D > div > img:nth-of-type(1){
+        width: 100%;
+        margin-bottom: 15px;
+        height: 65%;
+        border-radius: 1em;
+    }
+    #Images3D > div > img:nth-of-type(2){
+        width: 100%;
+        height: 30%;
+        border-radius: 1em;
+    }
+
+    /* Services Section */
+    #Services{
+        padding: 2.5% 4%;
+    }
+    .ServicesTitle p{
+        padding: 0 5em;
+    }
+    .ServicesTitle h2{
+        font-size: 1.5em;
+    }
+    .ServicesCardContainer{
+        row-gap: 0.8em;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .ServicesCard{
+        padding: 20px 30px;
+        margin: unset;
+    }
+    .ServicesCard img{
+        width: 90px;
+        height: 90px;
+        margin-bottom: 10px;
+    }
+    .ServicesCard:nth-of-type(2){
+        height: auto;
+    }
+    .ServicesCard:nth-of-type(2) img{
+        width: 90px;
+        height: 90px;
+        margin-bottom: 10px;
+    }
+
+    /* Places Section */
+    #Places{
+        padding: 2.5% 4%;
+    }
+    .PlacesTitle h2{
+        font-size: 1.5em;
+    }
+    .PlacesCardContainer{
+        row-gap: 2em;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: auto;
+    }
+    .PlaceCard{
+        max-width: 500px;
+        max-height: 300px;
+    }
+    .PlaceCard img{
+        width: 500px;
+        height: 24vh;
+    }
+    .PlaceCard button{
+        left: 35%;
+        bottom: 10%;
+        padding: 15px 50px;
+    }
+
+    /* More Infromation Section */
+    #MoreInfo{
+        padding: 2.5% 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #LeftContainer img{
+        width: 450px;
+        height: 350px;
+    }
+    #FloatBox1, #FloatBox2, #FloatBox3{
+        border-radius: 1em;
+        padding: 1em 2em;
+    }
+    #FloatBox1{
+        top: 8%;
+        right: -8%;
+    }
+    #FloatBox2{
+        left: -8%;
+    }
+    #FloatBox3{
+        right: -10%;
+    }
+    #RightContainer{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        text-align: start;
+    }
+    #RightContainer h2{
+        font-size: 1.8em;
+    }
+    #RightContainer p{
+        font-size: 0.8em;
+    }
+    #RightContainer button{
+        padding: 15px 40px;
+        margin-top: 2.5em;
+    }
+
+    /* Call To Action Section */
+    #CallToAction{
+        padding: 4% 3%;
+    }
+    #CallToAction div{
+        padding: 40px 20px;
+    }
+    #CallToAction h2{
+        font-size: 1.5em;
+    }
+    #CallToAction button{
+        padding: 10px 20px;
+        margin-top: 1em;
+    }
+
+    /* Footer Section */
+    footer{
+        padding: 2% 3%;
+    }
+}

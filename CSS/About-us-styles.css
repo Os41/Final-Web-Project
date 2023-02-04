@@ -1,0 +1,126 @@
+body{
+    background-repeat: no-repeat;
+    background-image: url(../Media/images/boxbackg.png);
+    background-position: top;
+    background-size:cover;
+}
+.layoyr{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 90%;
+    display: flex;
+}
+header{
+    scroll-snap-align: none;
+}
+.photo{
+    margin: 0;
+    padding: 0;
+    margin-top: 2%;
+    margin-left: 5%;
+    display: block;
+}
+.prsonalphoto{
+    border: 10px;
+    border-style: solid ;
+    border-color: #656565;
+    border-radius: 350px;
+    width: 70%;
+    height: 65%;
+}
+.icons{
+    margin-left: 3%;
+    margin-right: auto;
+    display: block;
+    text-align: left;
+}
+.information{
+    display: block;
+    text-align: left;
+    padding: 2%;
+    color: white;
+    width: 80%;
+}
+h1{
+    font-size: 80px;
+}
+h2{
+    font-size: 30px;
+    padding-left: 15%;
+    width: 90;
+}
+h3{
+    font-size: 20px;
+    padding-left: 30%;
+    width: 80%;
+    margin-top: 2%;
+}
+
+button{
+    position: fixed;
+    z-index: 100;
+    font-size: 60px;
+    padding: 50px;
+    border: 2px solid #008CBA;
+    border-radius: 200%;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    margin-right: 2%;
+    background: rgba(209, 214, 210, 0.6);
+}
+.bfutton:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
+
+@media screen and (max-width: 1600px) {
+    body{
+        background-image: url(../Media/images/back\ 1600.png);
+    }
+    .icons{
+        margin-top: 10%;
+        margin-left: 30%;
+        margin-right: auto;
+        display: flex;
+    }
+}
+@media screen and (max-width: 1200px) {
+    body{
+        background-image: url(../Media/images/back\ 12000.png);
+        display: block;
+    }
+    .icons{
+        margin-top: 10%;
+        margin-left: 30%;
+        margin-right: auto;
+        display: flex;
+    }
+    .layoyr{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .prsonalphoto{
+        border: 10px;
+        border-style: solid ;
+        border-color: #656565;
+        border-radius: 350px;
+        width: 50%;
+        height: 70%;
+        margin-top: 5%;
+    }
+    .information{
+        display: block;
+        text-align: left;
+        padding: 2%;
+        color: white;
+        width: 60%;
+        margin-top: 15%;
+    }
+}
