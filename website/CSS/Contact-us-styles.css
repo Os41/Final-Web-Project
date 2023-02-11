@@ -1,4 +1,3 @@
-/* Import Font */
 :root{
     --primary-color: #4B56D2;
     --secondary-color: #82C3EC;
@@ -107,7 +106,6 @@ form{
     text-align: left;
     display: block;
     height: 90%;
-    /* overflow: hidden; */
 }
 .input{
     height: 100%;
@@ -137,6 +135,10 @@ form{
     margin-top: 2%;
 }
 .BOX{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     padding-bottom: 0PX;
     margin-top: 2%;
 }
@@ -146,10 +148,8 @@ form{
     color: gray;
     font-size: 26px;
 }
-button{
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-bottom: 5%;
+.btn{
+    margin: 5%;
     padding: 5%;
     width: 60%;
     background-color: #817FFD;
@@ -198,95 +198,59 @@ button{
     align-items: center;
 }
 
-
 @media (max-width: 1160px) {
     header{
         background-color: transparent;
     }
 }
-/* @media screen and (max-width: 1400px) {
-    body{
-        background-repeat: no-repeat;
-        background-image: url(../Media/images/13ff706fa41d263150405c550747a639.png);
-        background-position: center;
-        background-size:cover;
-        text-align: center;
-    }
+@media (max-width: 992px) {
     .fex{
-        margin-top: 8%;
-        width: 80%;
-        display: flex;
-        text-align: center;
-    
-    }
-    .hent{
-        font-size: 18px;
-        margin-bottom: 0px;
+        padding: 2% 6%;
+        grid-template-columns: 1fr 0.7fr;
+        column-gap: 20px;
     }
     .center{
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
-        padding: 0%;
-        text-align: left;
-        display: block;
+        height: 70%;
     }
-    .texthed{
-        margin: 0PX;
-        padding: 1%;
-        color: gray;
-        font-size: 22px;
+    .iconeinrghet{
+        min-width: 8%;
+        min-height: 8%;
     }
-    button{
-        margin-top: 5%;
-        margin-left: 5%;
-        padding: 3%;
-        width: 60%;
-        background-color: #817FFD;
-        border: none;
-        border-radius: 30px;
-        font-size: 15px;
-        font-weight: bold;
-        color: #ffffff;
+}
+@media (max-width: 768px) {
+    header{
+        padding: 1% 3%;
+        display: grid;
     }
-    .hede{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-style: normal;
-        font-size: 40px;
-        font-weight: bold;
-        color: #4442a4;
-        text-align: left;
+    header img{
+        width: 70px;
     }
-} */
-
-/* @media screen and (max-width: 1000px) {
-    body{
-        background-image: url(../Media/images/boxbackgrond.png);
+    .active{
+        min-height: 0.3em;
+        border-radius: 1em;
+    }
+    nav ul li a{
+        font-size: 0.8em;
+        padding: 0 0.7em;    
+    }
+    header > div span{
+        margin-right: 0.5em;
+    }
+    header > div span a{
+        font-size: 0.8em;
+    }
+    header > div img{
+        width: 30px;
+        height: 30px;
     }
     .fex{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-        width: 80%;
-        display: block;
-    
+        grid-template-columns: 1fr;
+        overflow: auto;
+        margin-top: 10px;
+        padding: 0 6%;
+        height: 77vh;
     }
-    .hent{
-        font-size: 15px;
-        margin-bottom: 0px;
+    form{
+        overflow: visible;
     }
-    .center{
-        margin-left: auto;
-        margin-right: auto;
-        width: 95%;
-        padding: 0%;
-        text-align: left;
-        display: block;
-    }
-    .photo_maile{
-        height: 50%;
-        width: 100%;
-        display: none;
-        z-index: 1;
-    }
-} */
+}

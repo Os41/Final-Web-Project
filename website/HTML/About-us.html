@@ -4,14 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../CSS/Index-styles.css">
-        <link rel="stylesheet" href="../../CSS/About-us-styles.css">
+        <link rel="stylesheet" href="../CSS/About-us-styles.css">
         <title>About Us</title>
+        <script src="../JS/aboutUs.js" defer></script>
     </head>
     <body>
-        <button class="bfutton">></button>
         <header>
-            <img src="../../Media/icons/logo.png" alt="logo">
+            <img src="../Media/icons/logo.png" alt="logo">
             <nav>
                 <ul>
                     <li>
@@ -33,48 +32,47 @@
                 </ul>
             </nav>
             <div>
-                <span><a href="./Login.html">Login</a></span>
-                <img src="../../Media/icons/Login.png" alt="login">
+                <span><a href="./Register.html">Login</a></span>
+                <img src="../Media/icons/Login.png" alt="login">
             </div>
         </header>
         <section>
             <div class="layoyr">
                 <div class="photo">
-                        <img class="prsonalphoto" src="../../Media/images/2und.jpeg" alt="a">
+                        <img id="personImg" class="prsonalphoto" src="../Media/images/OmarImage.png" alt="a">
                     <div class="icons">
                         <div>
-                            <img src="../../Media/icons/instagram.png" alt="b">
+                            <a href="" id="instagram"><img src="../Media/icons/instagram.png" alt="b"></a>
                         </div>
                         <div>
-                            <img src="../../Media/icons/twitter.png" alt="c">
+                            <a href="" id="twitter"><img src="../Media/icons/twitter.png" alt="b"></a>
                         </div>
                         <div>
-                            <img src="../../Media/icons/email.png" alt="d">
+                            <a href="" id="email"><img src="../Media/icons/email.png" alt="b"></a>
                         </div>
                     </div>
                 </div>
                 <div class="information">
                     <div>
-                        <h1>About Us</h1>
+                        <select name="name" id="namesSelection">
+                            <option value="Omar" selected>Omar Saad</option>
+                            <option value="Azoz">AbdulAziz Banaemah</option>
+                            <option value="Ahmed">Ahmed Sami</option>
+                            <option value="Farooq">Farooq Alshawish</option>
+                        </select>
                     </div>
                     <div>
-                        <h2>
+                        <h2 id="personInfo">
                             Ahmed was borne 9 march 1999 in cairo is captl of 
                             EGYPT is stady softwer engnering in unvirsty of
                         </h2>
                     </div>
+                    <br>
+                    <br>
                     <div>
-                        <h3>
+                        <h3 id="personDetails">
                             in 2019 hiajkd ;fjDG XHBDDGD GDGDGG GGGGGGG GGGGGGGGGG; 
                             llncljk vn;dasjg';dsafjn ';LKDF;C'KL;SND
-                        </h3>
-                        <h3> 
-                            IN 2023 DSDFVGSDFVGAEDSF EHBASDF GHBNASD GJAEDGNJADFG 
-                            VNBAZDE FHGBDXSVBF NADFGAD SFGNHBA XCV
-                        </h3>
-                        <h3>
-                            IN 2023 DSDFV GSDFVGA EDSFEHBAS DFGHBNASDGJA 
-                            EDGNJADFGV NBAZDEFH GBDXSVB FNADFGA DSFGNHBA XCV
                         </h3>
                     </div>
                 </div>
