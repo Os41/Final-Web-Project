@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Title</title>
         <link rel="stylesheet" href="../CSS/Index-styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     </head>
     <body>
         <header>
@@ -45,10 +47,10 @@
 
             <div id="Images3D">
                 <div>
-                    <img src="../Media/images/img6.jpg" alt="img1">
-                    <img src="../Media/images/img1.jpg" alt="img2">
+                    <section id="panorama1"></section>
+                    <img src="../Media/images/img1.jpg">
                 </div>
-                <img src="../Media/images/img2.jpg" alt="img3">
+                <section id="panorama2"></section>
             </div>
         </main>
         <section id="Services">
@@ -145,5 +147,21 @@
         <footer>
             <p>&copy;SAVR</p>
         </footer>
+
+        <script>
+            pannellum.viewer('panorama1', {
+                "panorama": "../Media/VRimages/JEDDAH/place9.jpg",
+                "autoRotate": -10,
+                "autoLoad": true
+
+            });
+            pannellum.viewer('panorama2', {
+                "panorama": "../Media/VRimages/العلا/Street View 3603.jpg",
+                "autoRotate": -10,
+                "autoLoad": true
+
+            });
+
+            </script>
     </body>
 </html>

@@ -148,18 +148,18 @@ h6 {
   margin-right: 10%;
   margin-top: 10%;
   height: 10%;
+  text-align: end;
 }
 
 .img_pin {
   margin-right: 8%;
   width: 15%;
-  float: right;
+  float: left;
 }
 
 .h3_txt {
   display: inline;
   font-size: 150%;
-
 }
 
 .checked {
