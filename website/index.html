@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Title</title>
         <link rel="stylesheet" href="./CSS/Index-styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     </head>
     <body>
         <header>
@@ -39,17 +41,20 @@
             <div>
                 <h2>Welcome to</h2>
                 <h1>Saudi VR -SAVR!</h1>
-                <p>Enhance the tourist experience by providing a unique and immersive preview of tourist attractions, trips, 
-                    and events, promoting them in a contemporary and innovative way, and changing the traditional images</p>
+                <p>
+                    Enhance the tourist experience by providing a unique and immersive preview of tourist attractions, 
+                    trips, and events, 
+                    promoting them in a contemporary and innovative way, and changing the traditional images
+                </p>
                 <a href="#Services"><button>Expolre more</button></a>
             </div>
 
             <div id="Images3D">
                 <div>
-                    <img src="./Media/images/img6.jpg" alt="img1">
+                    <section id="panorama1"></section>
                     <img src="./Media/images/img1.jpg" alt="img2">
                 </div>
-                <img src="./Media/images/img2.jpg" alt="img3">
+                <section id="panorama2"></section>
             </div>
         </main>
         <section id="Services">
@@ -67,9 +72,9 @@
                     <img src="./Media/images/img1.jpg" alt="Place 1">
                     <h4>Coverage events and activities</h4>
                     <p>
-                        Select existing events and activities then watch it
+                        SAVR virtual tours use cutting-edge technology, including virtual 
                         <span id="hideText1">
-                            as virtual tour.
+                            reality to get fully information about the events and festivalsin a way that is both engaging and immersive.
                         </span>
                     </p>
                     <span>
@@ -97,9 +102,9 @@
                     <img src="./Media/images/img3.jpg" alt="Place 3">
                     <h4>Organizing tourist trips</h4>
                     <p>
-                        Enabling tourism companies to display their trips using
+                        SAVR offer a comprehensive and innovative 
                         <span id="hideText3">
-                            the virtual tour technology.
+                            solution for organizing and planning your next tourist trip.
                         </span>
                     </p>
                     <span>
@@ -140,16 +145,16 @@
                     <h4>Places</h4>
                 </div>
                 <div id="FloatBox2">
-                    <h3>100+</h3>
-                    <h4>Places</h4>
+                    <h3>50+</h3>
+                    <h4>Events</h4>
                 </div>
                 <div id="FloatBox3">
-                    <h3>100+</h3>
-                    <h4>Places</h4>
+                    <h3>200+</h3>
+                    <h4>Trips</h4>
                 </div>
             </div>
             <div id="RightContainer">
-                <h2>Travel with Us Virtual Around The World</h2>
+                <h2>Travel with SAVR Virtual Around The World</h2>
                 <p>Join us on a virtual journey around the world, as we offer a unique and exciting 
                     travel experience through our virtual tours that allow 
                     you to explore and discover new destinations from the comfort on your own home.</p>
@@ -166,6 +171,21 @@
         <footer>
             <p>&copy;SAVR</p>
         </footer>
+        <script>
+            pannellum.viewer('panorama1', {
+                "panorama": "./Media/VRimages/JEDDAH/place9.jpg",
+                "autoRotate": -10,
+                "autoLoad": true
+    
+            });
+            pannellum.viewer('panorama2', {
+                "panorama": "./Media/VRimages/العلا/Street View 3603.jpg",
+                "autoRotate": -10,
+                "autoLoad": true
+    
+            });
+        </script>
+            <script src="./JS/index.js"></script>
+
     </body>
-    <script src="./JS/index.js"></script>
 </html>

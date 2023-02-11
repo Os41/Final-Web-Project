@@ -16,41 +16,37 @@ function showLogin(){
     if(selectedValue == "Azoz"){
         personImg.setAttribute("src", "../Media/images/AzozImage.png");
 
-        instagram.setAttribute("href", "");
-        twitter.setAttribute("href", "");
-        email.setAttribute("href", "");
+        twitter.setAttribute("href", "https://twitter.com/azoooz__56");
+        email.setAttribute("href", "mailto:azoooz-56@hotmail.com");
 
-        personInfo.innerText = "A";
-        personDetails.innerText = "A";
+        personInfo.innerText = "Software engineering student at the University of Jeddah,  always ready to take on tasks, like teamwork and possesses a high skill in cooperating with team members,";
+        personDetails.innerText = "adept at understanding requirements and delivering projects accordingly, have the ability to maintain code by fixing errors in addition to testing, provide new ideas and best quality, loves to explore and self-learning.";
 
     }else if(selectedValue == "Ahmed"){
         personImg.setAttribute("src", "../Media/images/AhmedImage.jpeg");
 
-        instagram.setAttribute("href", "");
-        twitter.setAttribute("href", "");
-        email.setAttribute("href", "");
+        twitter.setAttribute("href", "https://twitter.com/ahmsam900");
+        email.setAttribute("href", "mailto:ahmedsami9936@gmail.com");
 
-        personInfo.innerText = "B";
-        personDetails.innerText = "B";
+        personInfo.innerText = "Software engineering student at the University of Jeddah,  always ready to take on tasks, like teamwork and possesses a high skill in cooperating with team members,";
+        personDetails.innerText = "adept at understanding requirements and delivering projects accordingly, have the ability to maintain code by fixing errors in addition to testing, provide new ideas and best quality, loves to explore and self-learning.";
 
     }else if(selectedValue == "Farooq"){
         personImg.setAttribute("src", "../Media/images/FarooqImage.png");
 
-        instagram.setAttribute("href", "");
-        twitter.setAttribute("href", "");
-        email.setAttribute("href", "");
+        twitter.setAttribute("href", "https://twitter.com/Futurre98");
+        email.setAttribute("href", "mailto:Eng-Farooq@hotmail.com");
 
-        personInfo.innerText = "C";
-        personDetails.innerText = "C";
+        personInfo.innerText = "Software engineering student at the University of Jeddah,  always ready to take on tasks, like teamwork and possesses a high skill in cooperating with team members,";
+        personDetails.innerText = "adept at understanding requirements and delivering projects accordingly, have the ability to maintain code by fixing errors in addition to testing, provide new ideas and best quality, loves to explore and self-learning.";
 
     }else if(selectedValue == "Omar"){
         personImg.setAttribute("src", "../Media/images/OmarImage.png");
 
-        instagram.setAttribute("href", "");
-        twitter.setAttribute("href", "");
-        email.setAttribute("href", "");
+        twitter.setAttribute("href", "https://twitter.com/Omar41Saad");
+        email.setAttribute("href", "mailto:omar41saad@outlook.com");
 
-        personInfo.innerText = "D";
-        personDetails.innerText = "D";
+        personInfo.innerText = "Software engineering student at the University of Jeddah,  always ready to take on tasks, like teamwork and possesses a high skill in cooperating with team members,";
+        personDetails.innerText = "adept at understanding requirements and delivering projects accordingly, have the ability to maintain code by fixing errors in addition to testing, provide new ideas and best quality, loves to explore and self-learning.";
     }
 }
