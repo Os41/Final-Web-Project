@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/Contact-us-styles.css">
+        <title>Contact us</title>
+    </head>
+    <body>
+        <header>
+            <img src="../Media/icons/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                        <div></div>
+                    </li>
+                    <li>
+                        <a href="./Places.html">Places</a>
+                        <div></div>
+                    </li>
+                    <li>
+                        <a href="./About-us.html">About Us</a>
+                        <div></div>
+                    </li>
+                    <li>
+                        <a href="./Contact-us.html">Contact Us</a>
+                        <div class="active"></div>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <span><a href="./Register.html">Login</a></span>
+                <img src="../Media/icons/Login.png" alt="login">
+            </div>
+        </header>
+
+        <div class="fex">
+            <div class="center">
+                <h1 class="hede">
+                    Let's talk
+                </h1>
+                <form method="POST" action="/contact-us" id="myContactForm" name="myContactForm">
+                    <div class="BOXX">
+                        <h4 class="texthed">First Name</h4>
+                        <input type="text" class="input" name="fname" minlength="1" maxlength="100" required autofocus>
+                    </div>
+                    <div class="BOXX">
+                        <h4 class="texthed">Last Name</h4>
+                        <input type="text" class="input" name="lname" minlength="1" maxlength="100" required>
+                    </div>
+
+                    <div class="BOXX">
+                        <h4 class="texthed">Your Email</h4>
+                        <input type="email" class="input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="2" maxlength="200" required>
+                    </div>
+
+                    <div class="BOXX">
+                        <h4 class="texthed">Your Mobile</h4>
+                        <input type="tel" class="input" name="mobile" minlength="9" maxlength="14" required>
+                    </div>
+
+                    <div>
+                        <h4 class="texthed">Your Gender</h4>
+                        <div class="BOX">
+                            <label>
+                                <input type="radio" name="gender" value="Male">
+                                Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="Female">
+                                Female
+                            </label>
+                        </div>
+    
+                        <div class="BOXX">
+                            <h4 class="texthed">Date of birth</h4>
+                            <input type="date" class="input" name="dateOfBirth" required>
+                        </div>
+                    </div>
+
+                    <div class="BOXX">
+                        <h4 class="texthed">Language of communication</h4>
+                        <select name="languageOfCommunication" id="lang">
+                            <option value="Arabic" selected>Arabic</option>
+                            <option value="English">English</option>
+                            <option value="French">French</option>
+                        </select>
+                    </div>
+
+                    <div class="BOXX">
+                        <h4 class="texthed">Your Message</h4>
+                        <textarea class="inputMassige" name="message" minlength="1" maxlength="500"></textarea>
+                    </div>
+
+                    <div class="BOX">
+                        <input class="btn" type="submit" value="Send Message">
+                        <input class="btn" type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+
+            <div class="center">
+                <img class="photo_maile" src="../Media/icons/download1.png" alt="collus">
+                <div>
+                    <div class="smailinfo">
+                        <img class="iconeinrghet" src="../Media/icons/icons8-place-marker-64.png"  alt="location">
+                        <p> Jeddah saudi 22354</p>
+                    </div>
+                    <div class="smailinfo">
+                        <img class="iconeinrghet" src="../Media/icons/icons8-ringer-volume-64.png" alt="collicon">
+                        <p> +9665000000000</p>
+                    </div>
+                    <div class="smailinfo">
+                        <img class="iconeinrghet" src="../Media/icons/icons8-envelope-64.png" alt="mailicon">
+                        <p>CSSaudivr@Saudivr.com</p>
+                    </div>
+                </div>
+                <div  class="socelicon">
+                    <a href="#"><img class="actionicon" src="../Media/icons/email.png" alt="email"></a>
+                    <a href="#"><img class="actionicon" src="../Media/icons/twitter.png" alt="twiter"></a>
+                    <a href="#"><img class="actionicon" src="../Media/icons/instagram.png" alt="instagram"></a>
+                </div>
+            </div>
+        </div>
+        <script src="../JS/contactUs.js"></script>
+    </body>
+    
+</html>

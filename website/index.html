@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Title</title>
+        <link rel="stylesheet" href="./CSS/Index-styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="./Media/icons/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                        <div class="active"></div>
+                    </li>
+                    <li>
+                        <a href="./HTML/Places.html">Places</a>
+                        <div></div>
+                    </li>
+                    <li>
+                        <a href="./HTML/About-us.html">About Us</a>
+                        <div></div>
+                    </li>
+                    <li>
+                        <a href="./HTML/Contact-us.html">Contact Us</a>
+                        <div></div>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <span><a href="./HTML/Register.html">Login</a></span>
+                <img src="./Media/icons/Login.png" alt="login">
+            </div>
+        </header>
+        <main>
+            <div>
+                <h2>Welcome to</h2>
+                <h1>Saudi VR -SAVR!</h1>
+                <p>
+                    Enhance the tourist experience by providing a unique and immersive preview of tourist attractions, 
+                    trips, and events, 
+                    promoting them in a contemporary and innovative way, and changing the traditional images
+                </p>
+                <a href="#Services"><button>Expolre more</button></a>
+            </div>
+
+            <div id="Images3D">
+                <div>
+                    <section id="panorama1"></section>
+                    <img src="./Media/images/img1.jpg" alt="img2">
+                </div>
+                <section id="panorama2"></section>
+            </div>
+        </main>
+        <section id="Services">
+            <div class="ServicesTitle">                
+                <p>Our Services</p>
+                <h2>What Services Dose SAVR Offer</h2>
+                <p>Our site coverage offers a fully immersive virtual tour experience, providing of tourist 
+                    attractions, organizing and covering tourist trips, and covering important events and activities, 
+                    using virtual reality technology that allows visitors to 
+                    explore and navigate the site using smart devices for a complete understanding.</p>
+            </div>
+
+            <div class="ServicesCardContainer">
+                <div class="ServicesCard">
+                    <img src="./Media/images/img1.jpg" alt="Place 1">
+                    <h4>Coverage events and activities</h4>
+                    <p>
+                        SAVR virtual tours use cutting-edge technology, including virtual 
+                        <span id="hideText1">
+                            reality to get fully information about the events and festivalsin a way that is both engaging and immersive.
+                        </span>
+                    </p>
+                    <span>
+                        <button id="findBtn1">
+                            Read more
+                        </button>
+                    </span>
+                </div>
+                <div class="ServicesCard">
+                    <img src="./Media/images/img2.jpg" alt="Place 2">
+                    <h4>Coverage of Sights</h4>
+                    <p>
+                        comprehensive coverage of tourist sights and showing 
+                        <span id="hideText2">
+                            the most interesting and beautiful places around the world in a unique and immersive way.
+                        </span>
+                    </p>
+                    <span>
+                        <button id="findBtn2">
+                            Read more
+                        </button>
+                    </span>
+                </div>
+                <div class="ServicesCard">
+                    <img src="./Media/images/img3.jpg" alt="Place 3">
+                    <h4>Organizing tourist trips</h4>
+                    <p>
+                        SAVR offer a comprehensive and innovative 
+                        <span id="hideText3">
+                            solution for organizing and planning your next tourist trip.
+                        </span>
+                    </p>
+                    <span>
+                        <button id="findBtn3">
+                            Read more
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="Places">
+            <div class="PlacesTitle">
+                <p></p>
+                <h2>Recent works</h2>
+                <p>Latest work that we have accomplished</p>    
+            </div>
+
+            <div class="PlacesCardContainer">
+                <div class="PlaceCard">
+                    <img src="./Media/images/img1.jpg" alt="Place 1">
+                    <button>Place</button>
+                </div>
+                <div class="PlaceCard">
+                    <img src="./Media/images/img2.jpg" alt="Place 2">
+                    <button>Place</button>
+                </div>
+                <div class="PlaceCard">
+                    <img src="./Media/images/img3.jpg" alt="Place 3">
+                    <button>Place</button>
+                </div>
+            </div>
+        </section>
+        <section id="MoreInfo">
+            <div id="LeftContainer">
+                <img src="./Media/images/img2.jpg" alt="s">
+                <div id="FloatBox1">
+                    <h3>100+</h3>
+                    <h4>Places</h4>
+                </div>
+                <div id="FloatBox2">
+                    <h3>50+</h3>
+                    <h4>Events</h4>
+                </div>
+                <div id="FloatBox3">
+                    <h3>200+</h3>
+                    <h4>Trips</h4>
+                </div>
+            </div>
+            <div id="RightContainer">
+                <h2>Travel with SAVR Virtual Around The World</h2>
+                <p>Join us on a virtual journey around the world, as we offer a unique and exciting 
+                    travel experience through our virtual tours that allow 
+                    you to explore and discover new destinations from the comfort on your own home.</p>
+                <button>Read more</button>
+            </div>
+        </section>
+        <section id="CallToAction">
+            <div>
+                <h2>The traditional image will not deceive you anymore</h2>
+                <p>with</p>
+                <a href="./HTML/Login.html"><button>Join SAVR now</button></a>
+            </div>
+        </section>
+        <footer>
+            <p>&copy;SAVR</p>
+        </footer>
+        <script>
+            pannellum.viewer('panorama1', {
+                "panorama": "./Media/VRimages/JEDDAH/place9.jpg",
+                "autoRotate": -10,
+                "autoLoad": true
+    
+            });
+            pannellum.viewer('panorama2', {
+                "panorama": "./Media/VRimages/العلا/Street View 3603.jpg",
+                "autoRotate": -10,
+                "autoLoad": true
+    
+            });
+        </script>
+            <script src="./JS/index.js"></script>
+
+    </body>
+</html>

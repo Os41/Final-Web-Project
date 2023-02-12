@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../CSS/Register-styles.css">
+</head>
+
+<body>
+    <section class="container">
+
+        <section class="left-half">
+            <div class="inside_class">
+                <div class="title">
+                    <img src="../Media/icons/right.png" alt="" class="imgRight">
+                    <h1 class="first_title title_withicon"> Saudi </h1>
+                    <h1 class="first_title"> VR Tour </h1>
+                    <h1 class="insideTitle first_title">For Tourism</h1>
+                    <p >You will never know everything</p>
+                    <p>but you will know more</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="right-half">
+            <div class="right_div">
+                <img src="../Media/icons/iconLogin.png" alt="icon" id="first_icon">
+                <div>
+                    <h1 class="title_Right">Hey, hello</h1>
+                    <img src="../Media/icons/hiIcon.png" alt="hi Icon" class="image_hey">
+                </div>
+                <p id="impText">Enter your information to register</p>
+
+
+                <form method="POST" action="/register" id="myRegisterForm" name="myRegisterForm">
+
+                    <div>
+                        <label for="email_input">Email</label>
+                        <input type="email" class="input_text" name="email" 
+                        placeholder="azooz@hotmail.com" id="email_input" 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="2" maxlength="200" required autofocus>
+                    </div>
+
+                    <div>
+                        <label for="pass_input">Password</label>
+                        <input class="input_text" type="password" minlength="8" maxlength="100" 
+                        name="password"
+                        placeholder="**************" id="pass_input" required>
+                    </div>
+
+                    <div id="register_page">
+                        <label for="con_pass_input">Confirm Password</label>
+                        <input class="input_text" type="password" minlength="8" maxlength="100" 
+                        name="passwordConirm"
+                        placeholder="**************" id="con_pass_input" required>
+                    </div>
+
+                    <div hidden id="forgetPart">
+                        <input type="checkbox" id="remember_input" name="rememberMe">
+                        <label for="remember_input" id="remember"> Remember me</label>
+                        <a href="#" id="forget">Forget password?</a>
+                    </div>
+
+                    <input type="submit" value="Sign up now" id="button_id">
+
+                    <div class="line_or">
+                        <div class="line"></div>
+                        <span>or</span>
+                        <div class="line"></div>
+                    </div>
+
+                    <input type="button" value="Login" id="button_id_signUp">
+
+                </form>
+
+            </div>
+        </section>
+
+    </section>
+
+    <a id="backTo" href="../index.html"></a>
+    <script src="../JS/register.js"></script>
+</body>
+
+</html>
