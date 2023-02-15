@@ -12,7 +12,7 @@ function getContactUsFormValidation() {
 
         check('email').isLength({min:2, max:200}).withMessage('Email must be between 2 and 200 chars in length')
         .isString().withMessage('Email must be of type string')
-        .isEmail().withMessage('Email must be in the correct email fromat e.g., x@y.com')
+        .isEmail().withMessage('Email must be in the correct email format e.g., x@y.com')
         .trim().escape(),
 
         check('mobile').isLength({min:9, max:14}).withMessage('Mobile must be between 9 and 14 digits')
@@ -35,7 +35,7 @@ function getContactUsFormValidation() {
             const languageOfCommunication = ['Arabic', 'English', 'French'];
             if(languageOfCommunication.includes(val)) return true
             return false
-        }).withMessage("Selection for 'Your Gender' must be from provided list")
+        }).withMessage("Selection for 'Your Language' must be from provided list")
         .trim().escape(),
 
         check('message').isLength({min:1, max:500}).withMessage('Message must be between 1 and 500 chars in length')
@@ -48,7 +48,7 @@ function getRegisterFormValidation() {
     return[
         check('email').isLength({min:2, max:200}).withMessage('Email must be between 2 and 200 chars in length')
         .isString().withMessage('Email must be of type string')
-        .isEmail().withMessage('Email must be in the correct email fromat e.g., x@y.com')
+        .isEmail().withMessage('Email must be in the correct email format e.g., x@y.com')
         .trim().escape(),
 
         check('password').isLength({min:8, max:100}).withMessage('Email must be between 2 and 200 chars in length')
