@@ -7,37 +7,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Places</title>
   <link rel="stylesheet" href="../CSS/Places-styles.css">
+  <link rel="stylesheet" href="../CSS/Header.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-  <header>
+  <header class="abs">
       <img src="../Media/icons/logo.png" alt="logo">
-      <nav>
-          <ul>
-              <li>
-                  <a href="../index.html">Home</a>
-                  <div ></div>
-              </li>
-              <li>
-                  <a href="./Places.html">Places</a>
-                  <div class="active"></div>
-              </li>
-              <li>
-                  <a href="./About-us.html">About Us</a>
-                  <div></div>
-              </li>
-              <li>
-                  <a href="./Contact-us.html">Contact Us</a>
-                  <div></div>
-              </li>
-          </ul>
-      </nav>
-      <div>
-          <span><a href="./Register.html">Login</a></span>
-          <img src="../Media/icons/Login.png" alt="login">
+      <div id="tabs">
+          <nav>
+              <ul id="tabsList">
+                  <li>
+                      <a href="../index.html">Home</a>
+                      <div></div>
+                  </li>
+                  <li>
+                      <a href="./Places.html">Places</a>
+                      <div class="active"></div>
+                  </li>
+                  <li>
+                      <a href="./About-us.html">About Us</a>
+                      <div></div>
+                  </li>
+                  <li>
+                      <a href="./Contact-us.html">Contact Us</a>
+                      <div></div>
+                  </li>
+                  <li>
+                      <a href="./Register.html">Register</a>
+                      <div></div>
+                  </li>
+              </ul>
+          </nav>
       </div>
+      <img id="menu" src="../Media/icons/menu.png" alt="menu">
   </header>
   
   <section class="main_section">
@@ -129,6 +132,7 @@
     </section>
   </section>
   <script src="../JS/places_script.js"></script>
+  <script src="../JS/header.js"></script>
 </body>
 
 </html>

@@ -5,36 +5,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../CSS/About-us-styles.css">
+        <link rel="stylesheet" href="../CSS/Header.css">
         <title>About Us</title>
-        <script src="../JS/aboutUs.js" defer></script>
     </head>
     <body>
-        <header>
+        <header class="abs">
             <img src="../Media/icons/logo.png" alt="logo">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Home</a>
-                        <div></div>
-                    </li>
-                    <li>
-                        <a href="./Places.html">Places</a>
-                        <div></div>
-                    </li>
-                    <li>
-                        <a href="./About-us.html">About Us</a>
-                        <div class="active"></div>
-                    </li>
-                    <li>
-                        <a href="./Contact-us.html">Contact Us</a>
-                        <div></div>
-                    </li>
-                </ul>
-            </nav>
-            <div>
-                <span><a href="./Register.html">Login</a></span>
-                <img src="../Media/icons/Login.png" alt="login">
+            <div id="tabs">
+                <nav>
+                    <ul id="tabsList">
+                        <li>
+                            <a href="../index.html">Home</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="./Places.html">Places</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="./About-us.html">About Us</a>
+                            <div class="active"></div>
+                        </li>
+                        <li>
+                            <a href="./Contact-us.html">Contact Us</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="./Register.html">Register</a>
+                            <div></div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <img id="menu" src="../Media/icons/menu.png" alt="menu">
         </header>
         <section>
             <div class="layoyr">
@@ -76,5 +79,7 @@
                 </div>
             </div>
         </section>
+        <script src="../JS/aboutUs.js"></script>
+        <script src="../JS/header.js"></script>
     </body>
 </html>
