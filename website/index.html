@@ -12,30 +12,33 @@
     <body>
         <header>
             <img src="./Media/icons/logo.png" alt="logo">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                        <div class="active"></div>
-                    </li>
-                    <li>
-                        <a href="./HTML/Places.html">Places</a>
-                        <div></div>
-                    </li>
-                    <li>
-                        <a href="./HTML/About-us.html">About Us</a>
-                        <div></div>
-                    </li>
-                    <li>
-                        <a href="./HTML/Contact-us.html">Contact Us</a>
-                        <div></div>
-                    </li>
-                </ul>
-            </nav>
-            <div>
-                <span><a href="./HTML/Register.html">Login</a></span>
-                <img src="./Media/icons/Login.png" alt="login">
+            <div id="tabs">
+                <nav>
+                    <ul id="tabsList">
+                        <li>
+                            <a href="./index.html">Home</a>
+                            <div class="active"></div>
+                        </li>
+                        <li>
+                            <a href="./HTML/Places.html">Places</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="./HTML/About-us.html">About Us</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="./HTML/Contact-us.html">Contact Us</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="./HTML/Register.html">Register</a>
+                            <div></div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <img id="menu" src="./Media/icons/menu.png" alt="menu">
         </header>
         <main>
             <div>
@@ -171,6 +174,7 @@
         <footer>
             <p>&copy;SAVR</p>
         </footer>
+
         <script>
             pannellum.viewer('panorama1', {
                 "panorama": "./Media/VRimages/JEDDAH/place9.jpg",
@@ -185,7 +189,6 @@
     
             });
         </script>
-            <script src="./JS/index.js"></script>
-
+        <script src="./JS/index.js"></script>
     </body>
 </html>
