@@ -1,6 +1,6 @@
-document.getElementById('button_id_signUp').addEventListener("click", showLogin);
+document.getElementById('button_id_signUp').addEventListener("click", showPerson);
 
-function showLogin(){
+function showPerson(){
     let forgetSection = document.getElementById('forgetPart');
     let button1 = document.getElementById('button_id_signUp');
     let button2 = document.getElementById('button_id');

@@ -1,6 +1,6 @@
-document.getElementById('namesSelection').addEventListener("change", showLogin);
+document.getElementById('namesSelection').addEventListener("change", showPerson);
 
-function showLogin(){
+function showPerson(){
     let personImg = document.getElementById('personImg');
 
     let instagram = document.getElementById('instagram');
