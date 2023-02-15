@@ -1,7 +1,6 @@
 document.getElementById('findBtn1').addEventListener("click", () => showMoreText(1));
 document.getElementById('findBtn2').addEventListener("click", () => showMoreText(2));
 document.getElementById('findBtn3').addEventListener("click", () => showMoreText(3));
-document.getElementById('menu').addEventListener("click", toggleMenu);
 
 function showMoreText(index) {
     let text1 = document.getElementById('hideText1');
@@ -35,25 +34,4 @@ function showMoreText(index) {
         text3.style.display = 'none';
         btn3.style.display = 'block';
     } 
-}
-
-function toggleMenu() {
-    let menu = document.getElementById('menu');
-    let tabs = document.getElementById('tabs');
-    let header = document.getElementsByTagName('header')[0];
-    let tabs_list = document.getElementById('tabsList');
-
-    if(menu.getAttribute("alt") === 'menu'){
-        menu.setAttribute("alt", 'cross');
-        menu.setAttribute("src", './Media/icons/cross.png');
-        header.setAttribute('class', 'header add-1');
-        tabs_list.setAttribute('class', 'add-2');
-        tabs.setAttribute('class', 'add-3');
-    }else{
-        menu.setAttribute("alt", 'menu');
-        menu.setAttribute("src", './Media/icons/menu.png');
-        header.setAttribute('class', 'header');
-        tabs_list.setAttribute('class', '');
-        tabs.setAttribute('class', '');
-    }
 }

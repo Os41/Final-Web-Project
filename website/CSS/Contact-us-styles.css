@@ -25,65 +25,6 @@ body{
     background-position: center;
     background-size:cover;
 }
-
-/* Header Section */
-header{
-    width: 100vw;
-    height: 10vh;
-    padding: 1% 5%;
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--primary-color);
-}
-header img{
-    width: 95px;
-    height: 34px;
-}
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-}
-nav ul li{
-    position: relative;
-}
-.active{
-    position: absolute;
-    bottom: -2px;
-    min-width: 100%;
-    min-height: 0.5em;
-    border-radius: 1em;
-    background-color: #ffffff52;
-}
-nav ul li a{
-    padding: 0 1em;
-    text-decoration: none;
-    color: var(--sugar-color);
-    font-weight: bold;
-
-}
-header > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--sugar-color);
-    font-weight: bold;
-}
-header > div span{
-    margin-right: 1em;
-}
-header > div span a, header > div span a:visited{
-    text-decoration: none;
-    color: var(--sugar-color);
-}
-header > div img{
-    width: 30px;
-    height: 30px;
-}
-
 .fex{
     width: 100vw;
     height: 80vh;
@@ -200,7 +141,7 @@ form{
 
 @media (max-width: 1160px) {
     header{
-        background-color: transparent;
+        background-color: transparent!important;
     }
 }
 @media (max-width: 992px) {
@@ -218,31 +159,6 @@ form{
     }
 }
 @media (max-width: 768px) {
-    header{
-        padding: 1% 3%;
-        display: grid;
-    }
-    header img{
-        width: 70px;
-    }
-    .active{
-        min-height: 0.3em;
-        border-radius: 1em;
-    }
-    nav ul li a{
-        font-size: 0.8em;
-        padding: 0 0.7em;    
-    }
-    header > div span{
-        margin-right: 0.5em;
-    }
-    header > div span a{
-        font-size: 0.8em;
-    }
-    header > div img{
-        width: 30px;
-        height: 30px;
-    }
     .fex{
         grid-template-columns: 1fr;
         overflow: auto;

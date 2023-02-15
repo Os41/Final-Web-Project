@@ -1,0 +1,139 @@
+:root{
+    --primary-color: #4B56D2;
+    --secondary-color: #82C3EC;
+    --dark-purple-color :#472183;
+    --sugar-color :#F1F6F5;
+    --night-color :#656565;
+}
+
+.hidde{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.add-1 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 99;
+    top: 0;
+    background-color: var(--primary-color)!important;
+}
+.add-2 {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.add-3{
+    display: block!important;
+}
+
+/* Header Section */
+header{
+    width: 100vw;
+    height: 10vh;
+    padding: 1% 5%;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    scroll-snap-align: start;
+}
+header img{
+    width: 95px;
+    height: 34px;
+}
+#tabs nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+#tabs nav ul li{
+    position: relative;
+}
+.active{
+    position: absolute;
+    bottom: -2px;
+    min-width: 100%;
+    min-height: 0.5em;
+    border-radius: 1em;
+    background-color: #ffffff52;
+}
+#tabs nav ul li a{
+    padding: 0 1em;
+    text-decoration: none;
+    color: var(--sugar-color);
+    font-weight: bold;
+
+}
+#menu{
+    display: none;
+    width: 25px;
+    height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+/* Absolute Header */
+.abs{
+    position: absolute;
+    color: white;
+    z-index: 99;
+    background-color: transparent;
+    top: 0;
+}
+
+/* 992px, 768px, 576px */
+@media (max-width: 992px) {
+    /* Header Section */
+    header{
+        padding: 1% 4%;
+    }
+}
+@media (max-width: 768px) {    
+    /* Header Section */
+    header{
+        padding: 1% 3.5%;
+    }
+}
+@media (max-width: 576px) {
+    /* Header Section */
+    header{
+        height: 8.5vh;
+        padding: 1% 3%;
+        scroll-snap-align: unset;
+        /* add-1 */
+    }
+    header img{
+        width: 70px;
+        height: 30px;
+    }
+    .active{
+        bottom: -2px;
+        min-height: 0.3em;
+    }
+    #tabs nav ul li a{
+        font-size: 2em;
+        padding: 0 0.75em;
+    }
+    #tabs{
+        display: none;
+        /* add-3 */
+    }
+    #menu{
+        display: block;
+    }
+}
