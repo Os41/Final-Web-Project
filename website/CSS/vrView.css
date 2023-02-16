@@ -6,33 +6,12 @@ html, body {
   background-color: #000;
 }
 
-a:link, a:visited{
-  color: #bdc3c7;
-}
-
 .credit{
   position: absolute;
   text-align: center;
   width: 100%;
   padding: 20px 0;
   color: #fff;
-}
-
-#desc-container {
-  max-width: 500px;
-  max-height: 500px;
-  min-width: 200px;
-  min-height: 250px;
-  background: #fff;
-  color: #000;
-  border-radius: 3px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-#desc-container > iframe {
-  border: none;
-  width:100%;
 }
 
 .title {
@@ -51,10 +30,6 @@ html, body {
   height: 100%;
   overflow: hidden;
   background-color: #000;
-}
-
-a:link, a:visited{
-  color: #bdc3c7;
 }
 
 .credit{
